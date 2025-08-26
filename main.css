@@ -1,0 +1,340 @@
+:root {
+  --blanco: #fff;
+  --azul: #007bffaf;
+  --gris: #ccc;
+  --black-gris: #8a8a8a;
+  --black: #000;
+  --amarillo: rgba(251, 255, 0, 0.75);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header .titulo {
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+
+.titulo {
+    color: var(--black);
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    color: var(--blanco);
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parrafo {
+    /* color: gray; */
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.encabezado {
+    background-image: url('img/5302799.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3rem;
+    color: var(--blanco);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 4rem;
+    color: var(black);
+}
+
+.enlace {
+    color: var(--black);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.enlace:hover {
+    scale: 1.2;
+    color: var(--azul);
+    text-decoration: underline;
+}
+
+main {
+    margin: 3rem 30rem;
+    padding: 2rem;
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    background-color: rgb(255, 241, 223);
+    -webkit-box-shadow: 0px 0px 10px 8px var(--black);
+    box-shadow: -5px 5px 10px 8px var(--black);
+}
+
+.pie-pagina {
+    background-image: url('img/5302799.jpg');
+    width: 100%;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--blanco), var(--azul));
+}
+
+.seccion {
+    margin: 2rem auto;
+}
+
+.seccion p {
+    margin: 1rem 0;
+}
+
+.iconos {
+    display: inline;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.seccion-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.seccion-proyectos a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.seccion-proyectos a:hover, .seccion-proyectos a svg:hover {
+    color: var(--azul);
+    scale: 1.1;
+}
+
+.seccion-proyectos a h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+main fieldset form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.botones {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+main fieldset form .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--blanco);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 8rem;
+}
+
+main fieldset form .btnRegistrar {
+    background-color: var(--azul);
+}
+
+main fieldset form .btnLimpiar {
+        background-color: red;
+}
+
+main fieldset form .btnRegistrar:hover {
+    background-color: #005fa3; /* un azul más oscuro */
+}
+
+main fieldset form .btnLimpiar:hover {
+    background-color: #b20000; /* un rojo más oscuro */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: green;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: green;
+    outline: none;
+    box-shadow: 0 0 5px green;
+}
+
+form legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    }
+
+fieldset {
+    border: none;
+}
+
+.campo {
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem auto;
+}
+
+tr, th, td {
+  border: 1px solid var(--black);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+ul ul {
+    list-style-type: circle;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+ol {
+    list-style-type: decimal;
+    padding: 0;
+    margin-left: 2rem;
+}
+
+.table-container {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contenido-principal .video{
+    text-align: center;
+}
+
+.formulario-registro {
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.radio-group ul {
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: start;
+}
+
+.radio-group li,
+.checkbox-group li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+.radio-group li label,
+.checkbox-group li label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.radio-group ul,
+.checkbox-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.checkbox-group li label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type="checkbox"]:hover, input[type="radio"]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  outline: none;
+  box-shadow: 0 0 5px green;
+  accent-color: green;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: green; /* Cambia este color al que prefieras */
+}
+
+input[type="radio"] {
+  accent-color: green; /* Cambia este color al que prefieras */
+}

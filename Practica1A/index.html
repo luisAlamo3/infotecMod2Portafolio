@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Captura</title>
+</head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="age">Edad</label>
+            <input type="number" id="age" name="age" required>
+            <br><br>
+            <label for="gender">Género</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Masculino</option>
+                <option value="female">Femenino</option>
+                <option value="other">Otro</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preguntas</legend>
+            <label for="os">¿Cúal es tu sistema operativo favorito?</label>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>
+                    <input type="radio" id="windows" name="os" value="windows" required>
+                    <label for="windows">Windows</label>
+                </li>
+                <li>
+                    <input type="radio" id="mac" name="os" value="mac" required>
+                    <label for="mac">Mac</label>
+                </li>
+                <li>
+                    <input type="radio" id="linux" name="os" value="linux" required>
+                    <label for="linux">Linux</label>
+                </li>
+            </ul>
+            <br>
+            <label for="tecnologies">¿Qué tecnologías ocupas?</label>
+            <ul style="list-style: none; padding-left: 0;">
+                <li>
+                    <label for="html"><input type="checkbox" id="html" name="tecnologies" value="html"> HTML</label>
+                </li>
+                <li>
+                    <label for="css"><input type="checkbox" id="css" name="tecnologies" value="css"> CSS</label>
+                </li>
+                <li>
+                    <label for="js"><input type="checkbox" id="js" name="tecnologies" value="js"> JavaScript</label>
+                </li>
+                <li>
+                    <label for="python"><input type="checkbox" id="python" name="tecnologies" value="python"> Python</label>
+                </li>
+                <li>
+                    <label for="java"><input type="checkbox" id="java" name="tecnologies" value="java"> Java</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios</legend>
+            <label for="comments">Escribe tus comentarios</label>
+            <br>
+            <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+        </fieldset>
+        <div class="submit-container">
+            <button type="button">Siguiente</button>
+            <button type="submit" style="margin-left: 1em;">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
