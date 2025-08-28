@@ -54,6 +54,8 @@ header .titulo {
     background-attachment: fixed;
     padding: 3rem;
     color: var(--blanco);
+    position: sticky;
+    top: 0;
 }
 
 .navegacion {
@@ -264,7 +266,7 @@ ol {
 
 .img {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin: 1rem;
 }
@@ -337,4 +339,40 @@ input[type="checkbox"]:checked {
 
 input[type="radio"] {
   accent-color: green; /* Cambia este color al que prefieras */
+}
+
+.fija {
+    position: fixed;
+    background: lightblue;
+    top: 1rem;
+    left: 1rem;
+}
+
+.absoluta {
+    position: absolute;
+    background: orange;
+    top: 1rem;
+    left: 5rem;
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.relativa {
+    position: relative;
+    background: forestgreen;
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    left: 3rem;
+}
+
+.overflow {
+    overflow: auto;
+    height: 100px;
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    padding: 1rem;
 }

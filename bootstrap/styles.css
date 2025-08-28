@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    font-weight: bold;
+}
+.bg-header {
+    min-height: 150px;
+    background-image: url('img/pexels-harold-vasquez-853421-2653362.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.contenido-principal p{
+    text-align: justify;
+}
+.barra-lateral p {
+    text-align: justify;
+}
+nav, footer {
+    background-color: #000;
+}
+nav a:hover {
+    border-radius: 5px;
+    background-color: #555;
+}
+
+nav a:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
