@@ -10,8 +10,23 @@ h1, h2, h3 {
     background-size: cover;
     background-position: center;
 }
+
+.contenido-principal {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
 .contenido-principal p{
     text-align: justify;
+}
+
+.barra-lateral {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
 }
 .barra-lateral p {
     text-align: justify;
@@ -21,10 +36,16 @@ nav, footer {
 }
 nav a:hover {
     border-radius: 5px;
+    color: greenyellow !important;
     background-color: #555;
 }
 
 nav a:focus {
     outline: none;
     box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.bg-header:hover h1 {
+    color: greenyellow !important;
+    transition: color 0.3s;
 }
