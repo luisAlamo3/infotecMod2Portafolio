@@ -1,0 +1,42 @@
+body {
+    background-color: #555;
+}
+
+.encabezado {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.caja {
+    background-color: aqua;
+    width: 20%;
+    height: 400px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 400px;
+    margin: 5px;
+}
+
+@media(max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .caja {
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        line-height: normal;
+    }
+}
