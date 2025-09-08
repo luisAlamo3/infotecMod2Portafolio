@@ -1,0 +1,50 @@
+.carousel-indicators button:hover {
+    transform: scale(1.3) translateY(-3px) !important;
+    transition: transform 0.2s;
+    z-index: 2;
+}
+/* Efecto de crecimiento en botones de control del carousel */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    transform: scale(1.3);
+    transition: transform 0.2s;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #f3f0f0, #6fc6ff);
+}
+main {
+    flex: 1;
+}
+footer {
+    margin-top: auto;
+}
+form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: green;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: green !important;
+    outline: none !important;
+    box-shadow: 0 0 5px green !important;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
