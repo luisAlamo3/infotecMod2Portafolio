@@ -15,16 +15,10 @@ html, body {
     padding: 0;
 }
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #f3f0f0, #6fc6ff);
-}
-main {
-    flex: 1;
-}
-footer {
-    margin-top: auto;
+    background-color: rgb(117, 192, 214);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 form {
     border: 1px solid #ccc;
@@ -43,9 +37,17 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 5px green !important;
 }
 
-nav {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    position: sticky !important;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
